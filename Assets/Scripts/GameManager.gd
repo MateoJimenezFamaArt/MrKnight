@@ -5,8 +5,9 @@ var level_index = 0  # Keeps track of the current level
 
 @export var required_scores = [9, 13]  # Correct the number of coins needed for each level
 @export var levels = [
-	"res://Scenes/game.tscn",
-	"res://Scenes/level_1.tscn"
+	"res://Scenes/Levels/level_0.tscn",
+	"res://Scenes/Levels/level_1.tscn",
+	"res://Scenes/Levels/level_2.tscn"
 ]
 
 func _ready():

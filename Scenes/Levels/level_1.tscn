@@ -758,8 +758,6 @@ position = Vector2(-3, 41)
 position = Vector2(3, 54)
 shape = SubResource("WorldBoundaryShape2D_i1d5x")
 
-[node name="Spikes" type="Node" parent="."]
-
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Platform" parent="Platforms" instance=ExtResource("5_vyeai")]
@@ -791,8 +789,6 @@ libraries = {
 "": SubResource("AnimationLibrary_s2qx8")
 }
 autoplay = "Moving3"
-
-[node name="Enemies" type="Node" parent="."]
 
 [node name="Coins" type="Node" parent="."]
 

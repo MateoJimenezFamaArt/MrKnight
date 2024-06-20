@@ -2,9 +2,11 @@ extends Area2D
 
 @onready var game_manager = GameManager
 @onready var timer = $Timer
+@onready var death = $Death
 
 func _on_body_entered(body):
 	print("U died Bro")
+	death.play()
 	Engine.time_scale = 0.5
 	game_manager.score = 0
 	body.get_node("AnimatedSprite2D").play("Die")
