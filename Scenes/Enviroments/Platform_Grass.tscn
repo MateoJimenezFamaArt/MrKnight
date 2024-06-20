@@ -3,9 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://c77uvepg0vdba" path="res://Assets/sprites/platforms.png" id="1_ovulw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_er36v"]
-size = Vector2(28, 8)
+size = Vector2(32, 8)
 
-[node name="Platform" type="AnimatableBody2D"]
+[node name="Platform_grass" type="AnimatableBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ovulw")
@@ -13,6 +13,5 @@ region_enabled = true
 region_rect = Rect2(15, 0, 34, 9)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_er36v")
 one_way_collision = true

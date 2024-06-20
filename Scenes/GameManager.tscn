@@ -5,4 +5,5 @@
 [node name="GameManager" type="Node"]
 unique_name_in_owner = true
 script = ExtResource("1_pidje")
-levels = ["res://Scenes/game.tscn", "res://Scenes/level_1.tscn", null]
+required_scores = [9, 13, 18]
+levels = ["res://Scenes/level_0.tscn", "res://Scenes/level_1.tscn", "res://Scenes/level_2.tscn"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://xxd5qjrqejth"]
 
 [ext_resource type="Texture2D" uid="uid://y3x52jyarq68" path="res://Assets/sprites/TileSetA.png" id="1_myixb"]
-[ext_resource type="PackedScene" uid="uid://bm77qdb4jp3au" path="res://Scenes/KillZone.tscn" id="2_npnuw"]
+[ext_resource type="PackedScene" uid="uid://bm77qdb4jp3au" path="res://Scenes/Extras/KillZone.tscn" id="2_npnuw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y1b7v"]
 size = Vector2(12, 6)

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="FirstGame"
-run/main_scene="res://Scenes/game.tscn"
+run/main_scene="res://Scenes/Levels/level_0.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -21,7 +21,7 @@ buses/default_bus_layout="res://Assets/sounds/default_bus_layout.tres"
 
 [autoload]
 
-Music="*res://Scenes/Music.tscn"
+Music="*res://Scenes/Extras/Music.tscn"
 GameManager="*res://Scenes/GameManager.tscn"
 
 [display]

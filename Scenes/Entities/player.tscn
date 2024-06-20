@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Assets/Scripts/player.gd" id="1_71tm4"]
 [ext_resource type="Texture2D" uid="uid://b4b6n08afonsn" path="res://Assets/sprites/knight.png" id="1_n7k5y"]
-[ext_resource type="PackedScene" uid="uid://d1fskpdhnpda3" path="res://Scenes/Explosion.tscn" id="3_18k2e"]
+[ext_resource type="PackedScene" uid="uid://d1fskpdhnpda3" path="res://Scenes/Extras/Explosion.tscn" id="3_18k2e"]
 [ext_resource type="AudioStream" uid="uid://c7ln8s6q2jf3o" path="res://Assets/sounds/jump.wav" id="4_pg8gl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7y1fj"]
