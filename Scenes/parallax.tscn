@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1y55mpcvos7k"]
+
+[ext_resource type="Texture2D" uid="uid://bqw62qpnjqwq0" path="res://Assets/parallax/sky.png" id="1_flo6h"]
+[ext_resource type="Texture2D" uid="uid://b46xnfy0srhts" path="res://Assets/parallax/sea.png" id="2_7csv7"]
+[ext_resource type="Texture2D" uid="uid://bucka0p35yjqy" path="res://Assets/parallax/clouds.png" id="3_650wi"]
+[ext_resource type="Texture2D" uid="uid://c7kme4vlye18k" path="res://Assets/parallax/far-grounds.png" id="4_3en6f"]
+
+[node name="Parallax" type="Node2D"]
+position = Vector2(-4, 33)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scale = Vector2(0.5, 0.5)
+transform = Transform2D(0.5, 0, 0, 0.5, 0, 0)
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+position = Vector2(-564, -312)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(112, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Sky"]
+scale = Vector2(10.2857, 2.11842)
+texture = ExtResource("1_flo6h")
+centered = false
+
+[node name="Sea" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+position = Vector2(-564, -312)
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(112, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Sea"]
+position = Vector2(0, 369)
+scale = Vector2(10.2857, 2.89583)
+texture = ExtResource("2_7csv7")
+centered = false
+
+[node name="Clouds" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+position = Vector2(-564, -312)
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(544, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Clouds"]
+position = Vector2(1.00001, 0)
+scale = Vector2(2.11397, 1.66102)
+texture = ExtResource("3_650wi")
+centered = false
+
+[node name="FarGrounds" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+position = Vector2(-564, -312)
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(616, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/FarGrounds"]
+position = Vector2(1, 414)
+scale = Vector2(1.86851, 2.11842)
+texture = ExtResource("4_3en6f")
+centered = false

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bobvnl7vbmwnl"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/GameManager.gd" id="1_pidje"]
+
+[node name="GameManager" type="Node"]
+unique_name_in_owner = true
+script = ExtResource("1_pidje")
+levels = ["res://Scenes/game.tscn", "res://Scenes/level_1.tscn", null]
