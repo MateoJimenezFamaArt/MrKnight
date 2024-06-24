@@ -1,9 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://bobvnl7vbmwnl"]
+[gd_scene load_steps=3 format=3 uid="uid://bobvnl7vbmwnl"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/GameManager.gd" id="1_pidje"]
+[ext_resource type="FontFile" uid="uid://b3102jwhpl81j" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="2_2r245"]
 
 [node name="GameManager" type="Node"]
 unique_name_in_owner = true
 script = ExtResource("1_pidje")
-required_scores = [9, 13, 30, 10]
-levels = ["res://Scenes/Levels/level_0.tscn", "res://Scenes/Levels/level_1.tscn", "res://Scenes/Levels/level_2.tscn", "res://Scenes/Levels/level_3.tscn"]
+required_scores = [9, 13, 30, 20, 75]
+levels = ["res://Scenes/Levels/level_0.tscn", "res://Scenes/Levels/level_1.tscn", "res://Scenes/Levels/level_2.tscn", "res://Scenes/Levels/level_3.tscn", "res://Scenes/Levels/level_4.tscn"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="score_label" type="Label" parent="CanvasLayer"]
+offset_left = 28.0
+offset_top = 12.0
+offset_right = 283.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_2r245")
+theme_override_font_sizes/font_size = 24
+text = "Coins gathered -> "
+metadata/_edit_use_anchors_ = true

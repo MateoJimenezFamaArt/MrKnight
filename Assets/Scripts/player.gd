@@ -24,7 +24,6 @@ const BULLET_TIME_WORLD_SPEED_SCALE = 0.4
 
 
 
-
 #Jumping Variables
 var jump_count = 0
 var max_jumps = 2
