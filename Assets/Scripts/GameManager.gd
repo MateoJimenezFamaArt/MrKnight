@@ -1,7 +1,7 @@
 extends Node
 
 var score = 0
-var level_index = 3  # Keeps track of the current level
+var level_index = 1  # Keeps track of the current level
 
 @onready var score_label = $CanvasLayer/score_label
 
