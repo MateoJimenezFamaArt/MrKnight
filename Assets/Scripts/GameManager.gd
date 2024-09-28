@@ -1,18 +1,23 @@
 extends Node
 
 var score = 0
-var level_index = 0  # Keeps track of the current level
+var level_index = 3  # Keeps track of the current level
 
 @onready var score_label = $CanvasLayer/score_label
 
-@export var required_scores = [9, 13]  # Correct the number of coins needed for each level
+@export var required_scores = [0,9, 13,30,20,75,0]  # Correct the number of coins needed for each level
 @export var levels = [
+	"res://Scenes/Levels/MainMenu.tscn",
 	"res://Scenes/Levels/level_0.tscn",
 	"res://Scenes/Levels/level_1.tscn",
-	"res://Scenes/Levels/level_2.tscn"
+	"res://Scenes/Levels/level_2.tscn",
+	"res://Scenes/Levels/level_3.tscn",
+	"res://Scenes/Levels/level_4.tscn",
+	"res://Scenes/Levels/YouWin.tscn"
 ]
 
 func _ready():
+	print("You have X posible levels ", str(levels.size()))
 	if level_index < levels.size():
 		update_score_label(score)
 		print("Game started. Level index at start: ", str(level_index))
@@ -35,6 +40,7 @@ func check_for_level_transition():
 			print("Your level should be changing to: ", str(levels[level_index]))
 			change_level(levels[level_index])
 		else:
+			change_level(levels[4])
 			print("All levels completed!")
 
 func change_level(level_path):

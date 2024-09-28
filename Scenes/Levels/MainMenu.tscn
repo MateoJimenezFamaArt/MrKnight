@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://by8dwojg0ox73"]
+
+[ext_resource type="Texture2D" uid="uid://bqw62qpnjqwq0" path="res://Assets/parallax/sky.png" id="1_d6sng"]
+[ext_resource type="Texture2D" uid="uid://b46xnfy0srhts" path="res://Assets/parallax/sea.png" id="2_7cw3e"]
+[ext_resource type="Texture2D" uid="uid://bucka0p35yjqy" path="res://Assets/parallax/clouds.png" id="3_abe8h"]
+[ext_resource type="Texture2D" uid="uid://c7kme4vlye18k" path="res://Assets/parallax/far-grounds.png" id="4_nrbss"]
+[ext_resource type="FontFile" uid="uid://b3102jwhpl81j" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="5_n1cun"]
+[ext_resource type="Script" path="res://Assets/Scripts/NextLevel.gd" id="6_vmd2x"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sky" type="Sprite2D" parent="."]
+position = Vector2(576, 324.5)
+scale = Vector2(10.2857, 2.12829)
+texture = ExtResource("1_d6sng")
+
+[node name="Sea" type="Sprite2D" parent="."]
+position = Vector2(576, 600)
+scale = Vector2(10.2857, 1)
+texture = ExtResource("2_7cw3e")
+
+[node name="Clouds" type="Sprite2D" parent="."]
+position = Vector2(577.5, 275.75)
+scale = Vector2(2.10846, 2.33686)
+texture = ExtResource("3_abe8h")
+
+[node name="Far-grounds" type="Sprite2D" parent="."]
+position = Vector2(471.5, 505.5)
+scale = Vector2(1.52435, 2.59091)
+texture = ExtResource("4_nrbss")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 738.0
+offset_top = 179.0
+offset_right = -179.0
+offset_bottom = -307.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_n1cun")
+theme_override_font_sizes/font_size = 42
+text = "Play!
+"
+script = ExtResource("6_vmd2x")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

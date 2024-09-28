@@ -134,7 +134,3 @@ func on_jump_buffer_timeout() -> void:
 
 func _on_dash_timer_timeout():
 	is_dashing = false
-
-
-
-
